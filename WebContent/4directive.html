@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+<title>angularjs</title>
+	<!-- here order of js include matter as ng-app js need angular.js so this order defined. -->
+	<script src="./js/angular-1.6.4/angular.js"></script>
+	<script src="./js/ngapp/ng-app.js"></script>
+</head>
+<body>
+	<form >
+		<div data-ng-app="myApp" >
+			
+			<!-- Element name -->
+			<cust-directive></cust-directive>
+			
+			<!-- Attribute -->
+			<div cust-directive></div>
+			
+			<!-- Class -->
+			<div class="cust-directive"></div>
+			<!-- Comment -->
+			<!-- directive: comment-directive -->
+		</div>
+	</form>
+</body>
+</html>

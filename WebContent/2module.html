@@ -3,12 +3,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>angularjs</title>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> -->
-	<script src="./js/ngapp/angular.js"></script>
+	<!-- here order of js include matter as ng-app js need angular.js so this order defined. -->
+	<script src="./js/angular-1.6.4/angular.js"></script>
+	<script src="./js/ngapp/ng-app.js"></script>
 </head>
 <body>
-	<form data-ng-app>
-		<div>
+	<form >
+		<div data-ng-app="myApp" >
 			<p> Name : <input  type="text" name="name" data-ng-model="name"></p>
 			<h1>Hello Mr. {{name}}</h1>
 		</div>
