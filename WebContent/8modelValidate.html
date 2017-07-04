@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="ISO-8859-1">
+<title>angularjs</title>
+	<!-- here order of js include matter as ng-app js need angular.js so this order defined. -->
+	<script src="./js/angular-1.6.4/angular.js"></script>
+	<script src="./js/ngapp/ng-app.js"></script>
+</head>
+<body>
+	<form data-ng-app="myApp" name="myForm">
+		<div >
+			<p> Email : <input type="email" name="myAddress" data-ng-model="emailadd"></p>
+			<span data-ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+					
+		</div>
+	</form>
+</body>
+</html>
